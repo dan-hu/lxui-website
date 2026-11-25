@@ -297,7 +297,7 @@ img[src$="about.jpg"]{filter:saturate(.65) contrast(1.02)}
 .back-top svg{width:22px;height:22px;stroke:#fff}
 
 /* ---------- 业务版图 ---------- */
-.biz-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.biz-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
 .biz-card{position:relative;background:var(--white);border:1px solid var(--line);border-radius:var(--radius-l);padding:40px 30px 34px;transition:.3s;overflow:hidden}
 .biz-card::after{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;border-radius:50%;background:var(--plum-100);opacity:.5;transition:.3s}
 .biz-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-m)}
