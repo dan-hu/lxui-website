@@ -1,483 +1,121 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>上海芝诚包装材料有限公司 - 瓦楞纸箱·彩印包装·缓冲材料一站式定制</title>
-  <meta name="description" content="上海芝诚包装材料有限公司以包装材料及制品销售为核心，经营纸制品、塑料制品、金属制品销售，同时供应卷筒不干胶标签与碳带，并提供包装服务、普通货物仓储、国内货物运输代理、图文设计制作、电商服务及货物进出口等业务。">
-  <meta name="keywords" content="上海包装材料,包装材料销售,纸制品销售,塑料制品销售,金属制品销售,卷筒不干胶标签,不干胶标签印刷,碳带,防伪标签,透明标签,标签打印耗材,包装服务,仓储服务,货运代理,图文设计,电商服务,一件代发">
-  <meta property="og:title" content="上海芝诚包装材料有限公司">
-  <meta property="og:description" content="一站式包装材料供应与定制：瓦楞纸箱 · 彩印包装 · 缓冲防护 · 包装耗材">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/logo-z-icon.png">
-  <meta property="og:site_name" content="上海芝诚包装材料有限公司">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "上海芝诚包装材料有限公司",
-    "logo": "assets/img/logo-z.png",
-    "foundingDate": "2021-12-20",
-    "address": {"@type": "PostalAddress", "addressLocality": "上海市", "addressRegion": "闵行区", "streetAddress": "元江路5500号第1幢"},
-    "telephone": "13866710707",
-    "email": "shang0707@vip.163.com"
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>灵星 × 芝诚 —— 标签智造与包装材料一站式平台</title>
+<meta name="description" content="灵星文化科技：15 年工业标签智造、RFID 智能化整体解决方案；上海芝诚包装材料：瓦楞纸箱、彩印包装、缓冲材料、不干胶标签与碳带一站式定制。双品牌，一个平台。">
+<meta name="keywords" content="灵星文化科技,上海芝诚包装,不干胶标签,标签印刷,RFID解决方案,包装材料,瓦楞纸箱,彩印包装,碳带,电商服务">
+<link rel="icon" type="image/png" href="portal-assets/zhicheng-logo.png">
+<style>
+  :root{
+    --lx-green:#BEE300; --lx-deep:#5A7A00;
+    --zc-plum:#3B1638; --zc-gold:#C79A4E;
+    --ink:#1f1c22; --muted:#6f6a76; --line:#e8e4ee; --bg:#faf9fb;
   }
-  </script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/png" href="assets/img/logo-z.png">
-  <link rel="apple-touch-icon" href="assets/img/logo-z-icon.png">
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:var(--bg); color:var(--ink); min-height:100vh;
+    display:flex; flex-direction:column;
+  }
+  .top{ text-align:center; padding:64px 20px 20px; }
+  .top .kicker{
+    display:inline-block; font-size:12px; letter-spacing:6px; color:var(--muted);
+    border:1px solid var(--line); border-radius:999px; padding:8px 22px; background:#fff;
+  }
+  .top h1{ margin-top:26px; font-size:clamp(26px,4.5vw,42px); letter-spacing:2px; }
+  .top h1 .g{ color:var(--lx-deep); } .top h1 .p{ color:var(--zc-plum); }
+  .top p.sub{ margin-top:14px; color:var(--muted); font-size:15px; letter-spacing:1px; }
+  .cards{
+    flex:1; display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:28px; max-width:1060px; width:100%; margin:40px auto 0; padding:0 24px 24px;
+  }
+  .card{
+    background:#fff; border-radius:24px; padding:44px 38px 38px; position:relative; overflow:hidden;
+    box-shadow:0 10px 40px rgba(30,20,40,.08); border:1px solid var(--line);
+    display:flex; flex-direction:column; transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .card:hover{ transform:translateY(-6px); box-shadow:0 18px 48px rgba(30,20,40,.14); }
+  .card .bar{ position:absolute; top:0; left:0; right:0; height:6px; }
+  .card.lx .bar{ background:linear-gradient(90deg,var(--lx-green),#e6ff7a); }
+  .card.zc .bar{ background:linear-gradient(90deg,var(--zc-plum),var(--zc-gold)); }
+  .logo-wrap{ height:96px; display:flex; align-items:center; margin-bottom:22px; }
+  .logo-wrap img{ max-height:84px; max-width:280px; object-fit:contain; }
+  .card h2{ font-size:24px; letter-spacing:1px; }
+  .card .en{ font-size:11.5px; letter-spacing:2.5px; color:var(--muted); margin-top:6px; text-transform:uppercase; }
+  .card .slogan{ margin:18px 0 8px; font-size:15.5px; font-weight:600; }
+  .card.lx .slogan{ color:var(--lx-deep); } .card.zc .slogan{ color:var(--zc-plum); }
+  .card ul{ list-style:none; margin:10px 0 26px; }
+  .card li{ font-size:14px; color:var(--muted); padding:5px 0 5px 20px; position:relative; }
+  .card li::before{ content:""; position:absolute; left:0; top:12px; width:8px; height:8px; border-radius:50%; }
+  .card.lx li::before{ background:var(--lx-green); } .card.zc li::before{ background:var(--zc-gold); }
+  .enter{
+    margin-top:auto; display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    padding:14px 30px; border-radius:999px; color:#fff; text-decoration:none; font-size:15.5px; letter-spacing:2px;
+    transition:filter .2s ease;
+  }
+  .enter:hover{ filter:brightness(1.08); }
+  .card.lx .enter{ background:linear-gradient(135deg,#a8cf00,var(--lx-green)); }
+  .card.zc .enter{ background:linear-gradient(135deg,var(--zc-plum),#5e2c58); }
+  .enter svg{ width:16px; height:16px; }
+  .foot{ text-align:center; padding:34px 20px 40px; color:var(--muted); font-size:13px; line-height:2; }
+  .foot b{ color:var(--ink); }
+  @media (max-width:720px){ .top{padding-top:44px} .cards{gap:20px} .card{padding:34px 26px 30px} }
+</style>
 </head>
 <body>
 
-<!-- 顶部信息条 -->
-<div class="topbar">
-  <div class="container">
-    <span class="topbar-brand">包装材料 · 标签耗材 · 包装服务 · 仓储运输</span><span class="topbar-name">上海芝诚包装材料有限公司</span>
-    <span class="hide-m">咨询热线：<a href="tel:13866710707"><strong>138 6671 0707</strong></a></span>
-  </div>
+<div class="top">
+  <span class="kicker">双 品 牌 · 一 站 式 服 务</span>
+  <h1><span class="g">灵星</span> × <span class="p">芝诚</span></h1>
+  <p class="sub">标签智造 15 年 · 包装材料一站式定制 —— 同一个团队，两条业务线</p>
 </div>
 
-<!-- 导航 -->
-<header class="site-header">
-  <div class="container nav">
-    <a class="logo logo-brand" href="index.html" aria-label="上海芝诚包装材料有限公司 首页" title="上海芝诚包装材料有限公司">
-      <img class="logo-mark" src="assets/img/logo-z.png" alt="上海芝诚包装材料有限公司 Z 字商标">
-      <span class="brand-divider" aria-hidden="true"></span>
-      <span class="brand-text">
-        <b>上海芝诚包装材料有限公司</b>
-        <i>SHANGHAI ZHICHENG PACKAGING MATERIALS CO., LTD.</i>
-      </span>
+<div class="cards">
+
+  <div class="card lx">
+    <div class="bar"></div>
+    <div class="logo-wrap"><img src="portal-assets/lingxing-logo.png" alt="灵星文化科技"></div>
+    <h2>合肥灵星文化科技</h2>
+    <div class="en">Sapiential Star · Lingxing</div>
+    <p class="slogan">心星相印 · 成就未来 —— 专业工业标签智造</p>
+    <ul>
+      <li>卷筒不干胶标签 · 切片标签（2010 年至今，15+ 年）</li>
+      <li>UL 认证标签企业 · ISO 9001:2015 · 无尘食品包装车间</li>
+      <li>RFID 智能化整体解决方案（UHF + EMQ 物联网中台）</li>
+      <li>服务光电、电子、食品、药品、轮胎、汽车汽配等行业</li>
+    </ul>
+    <a class="enter" href="/lingxing/">进入灵星官网
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
-    <nav class="nav-links" aria-label="主导航">
-      <a href="index.html">首页</a>
-      <a href="products.html">产品中心</a>
-      <a href="solutions.html">解决方案</a>
-      <a href="about.html">关于我们</a>
-      <a href="news.html">新闻资讯</a>
-      <a href="contact.html">联系我们</a>
-      <a class="nav-ext" href="https://www.lxui.com" target="_blank" rel="noopener" title="合肥灵星文化科技发展有限公司官网（新窗口打开）">合肥灵星科技<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
-    </nav>
-    <a class="nav-cta" href="contact.html">免费获取报价
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </div>
+
+  <div class="card zc">
+    <div class="bar"></div>
+    <div class="logo-wrap"><img src="portal-assets/zhicheng-logo.png" alt="上海芝诚包装材料"></div>
+    <h2>上海芝诚包装材料</h2>
+    <div class="en">Shanghai Zhicheng Packaging Materials</div>
+    <p class="slogan">瓦楞纸箱 · 彩印包装 · 缓冲材料 · 标签耗材</p>
+    <ul>
+      <li>纸制品、塑料制品、金属制品销售与定制</li>
+      <li>卷筒不干胶标签 · 碳带 · 防伪与特种标签</li>
+      <li>包装服务 · 仓储 · 国内货运代理 · 图文设计</li>
+      <li>电商服务（一件代发）· 货物进出口</li>
+    </ul>
+    <a class="enter" href="/zhicheng/">进入芝诚官网
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
-    <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-    </button>
   </div>
-</header>
 
-<a class="skip-link" href="#main">跳到主内容</a>
-
-<main id="main">
-
-<!-- Hero -->
-<section class="hero">
-  <div class="hero-slides" data-hero-slider aria-hidden="true">
-    <div class="hero-slide is-active" data-theme="卷筒不干胶标签 · ROLL LABELS"><img src="assets/img/label-hero.jpg" alt="" decoding="async"></div>
-    <div class="hero-slide" data-theme="仓储与整托配送 · WAREHOUSE"><img src="assets/img/hero.jpg" alt="" loading="lazy" decoding="async"></div>
-    <div class="hero-slide" data-theme="包装作业与代打包 · PACKING"><img src="assets/img/packing.jpg" alt="" loading="lazy" decoding="async"></div>
-    <div class="hero-slide" data-theme="瓦楞纸板与纸制品 · CORRUGATED"><img src="assets/img/about.jpg" alt="" loading="lazy" decoding="async"></div>
-  </div>
-  <div class="hero-nav">
-    <div class="container">
-      <span class="hero-caption" data-hero-caption>卷筒不干胶标签 · ROLL LABELS</span>
-      <div class="hero-dots" aria-label="首页主题图切换">
-        <button type="button" class="is-active" aria-label="切换到：卷筒不干胶标签"></button>
-        <button type="button" aria-label="切换到：仓储与整托配送"></button>
-        <button type="button" aria-label="切换到：包装作业与代打包"></button>
-        <button type="button" aria-label="切换到：瓦楞纸板与纸制品"></button>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <span class="hero-kicker">ZHICHENG PACKAGING · 立足上海 · 服务长三角</span>
-    <h1>让每一件产品，<br><em>安全抵达</em>每一个目的地</h1>
-    <p class="lead">以包装材料及制品销售为核心，依托 2010 年创立、深耕 15 年的标签印刷基地，覆盖纸箱彩盒、缓冲防护、卷筒不干胶标签与碳带耗材，配套包装服务、仓储运输与电商服务，为电商、食品、电子、工业及外贸企业提供从选材到交付的一站式包装供应链服务。</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="contact.html">免费获取报价
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <a class="btn btn-ghost" href="products.html">浏览产品中心</a>
-    </div>
-  </div>
-</section>
-
-<!-- 数据条 -->
-<div class="hero-stats">
-  <div class="container">
-    <div class="stat-strip reveal">
-      <div class="stat"><b><span data-count="24">0</span>h</b><i>报价响应</i></div>
-      <div class="stat"><b><span data-count="15">0</span>年</b><i>标签智造积淀</i></div>
-      <div class="stat"><b><span data-count="500" data-suffix="万">0</span></b><i>注册资本（元）</i></div>
-      <div class="stat"><b><span data-count="100" data-suffix="%">0</span></b><i>全程跟进</i></div>
-    </div>
-  </div>
 </div>
 
-<!-- 核心优势 -->
-<section class="section">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="kicker">WHY CHOOSE US</span>
-      <h2>为什么选择芝诚包装</h2>
-      <p>从选材、结构设计到印刷工艺，我们以供应链一体化能力，为您提供更具性价比与确定性的包装交付。</p>
-    </div>
-    <div class="grid-4">
-      <div class="adv-card reveal">
-        <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><path d="M3 9l4-5h10l4 5M3 9v11h18V9M3 9h18M9 13h6"/></svg></div>
-        <h3>品类齐全 一站配齐</h3>
-        <p>以包装材料及制品销售为核心，覆盖纸制品、塑料制品、金属制品等多类物料，一次询价配齐全套。</p>
-      </div>
-      <div class="adv-card reveal" data-delay="1">
-        <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
-        <h3>服务闭环 从包装到送达</h3>
-        <p>不仅供货：提供包装服务、普通货物仓储与国内货物运输代理，把入库、分装、发货一并接住。</p>
-      </div>
-      <div class="adv-card reveal" data-delay="2">
-        <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M4 7.5L12 12l8-4.5M12 12v9"/></svg></div>
-        <h3>设计支持 图文落地</h3>
-        <p>提供图文设计制作，包装结构、标签版面与随箱物料一并设计，方案直连打样与批量供货。</p>
-      </div>
-      <div class="adv-card reveal" data-delay="3">
-        <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v6c0 4.4-3 7.4-7 9-4-1.6-7-4.6-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <h3>合规经营 长期合作</h3>
-        <p>一般纳税人企业，具备货物进出口与技术进出口资质，可开票、可签约、可稳定长期供货。</p>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="foot">
+  <b>咨询热线：138 6671 0707</b>（联系人：商秀英）<br>
+  邮箱：shang0707@vip.163.com<br>
+  © <span id="year">2026</span> 灵星文化科技 · 上海芝诚包装材料
+</div>
 
-<!-- 业务版图 -->
-<section class="section" style="padding-top:0">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="kicker">BUSINESS SCOPE</span>
-      <h2>三块业务，一条链路</h2>
-      <p>以包装材料销售为主轴，向前延伸设计打样，向后接通包装、仓储与运输——让客户不必再为一件包装事对接多家供应商。</p>
-    </div>
-    <div class="biz-grid">
-      <div class="biz-card reveal">
-        <span class="biz-no">01 / CORE</span>
-        <h3>核心业务<br>包装材料及制品销售</h3>
-        <p>以包装材料及制品销售为主，横向覆盖纸、塑、金属三类物料，标签类产品由合肥印刷基地智造供货。</p>
-        <ul>
-          <li>包装材料及制品销售</li>
-          <li>纸制品、塑料制品、金属制品销售</li>
-          <li>卷筒不干胶标签（含防伪 / 薄膜 / 镭射）</li>
-          <li>碳带等标签打印耗材</li>
-        </ul>
-      </div>
-      <div class="biz-card reveal" data-delay="1">
-        <span class="biz-no">02 / SERVICE</span>
-        <h3>服务范围<br>包装到发运的落地环节</h3>
-        <p>货送到客户手上之前的每一步，都可以交给同一支团队：入库、分装、贴标、设计、发运。</p>
-        <ul>
-          <li>包装服务（代包装 / 分装 / 贴标）</li>
-          <li>普通货物仓储服务</li>
-          <li>国内货物运输代理</li>
-          <li>图文设计制作</li>
-          <li>电商服务（代打包 / 一件代发）</li>
-        </ul>
-      </div>
-      <div class="biz-card reveal" data-delay="2">
-        <span class="biz-no">03 / MORE</span>
-        <h3>其他业务<br>延伸能力与资质支撑</h3>
-        <p>线上渠道、咨询与研发能力，加上进出口资质，支撑客户从内贸到外贸的全场景需求。</p>
-        <ul>
-          <li>互联网销售</li>
-          <li>信息咨询服务</li>
-          <li>新材料技术研发</li>
-          <li>货物进出口</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 产品系列 -->
-<section class="section alt">
-  <div class="container">
-    <div class="section-head reveal" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;max-width:none">
-      <div style="max-width:620px">
-        <span class="kicker">PRODUCTS</span>
-        <h2>产品中心</h2>
-        <p>以包装材料及制品为主，纸制品、塑料制品、金属制品与标签耗材并行供应，常规现货与定制开发均有对应方案。</p>
-      </div>
-      <a class="more-link" href="products.html">查看全部产品
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-    <div class="products-grid">
-      <a class="prod-card reveal" href="products.html">
-        <div class="prod-thumb"><img src="assets/img/carton.jpg" alt="瓦楞纸箱系列"><span class="prod-tag">运输包装</span></div>
-        <div class="prod-body">
-          <h3>瓦楞纸箱系列</h3>
-          <p>三层 / 五层 / 七层瓦楞，对口箱、飞机盒、扣底箱、天地盖，抗压防震、折叠平铺发货。</p>
-          <div class="prod-specs"><span>E/B/C/AB 楞型</span><span>LOGO 印刷</span><span>出口标准</span></div>
-          <span class="prod-link">查看详情 →</span>
-        </div>
-      </a>
-      <a class="prod-card reveal" data-delay="1" href="products.html">
-        <div class="prod-thumb"><img src="assets/img/colorbox.jpg" alt="彩印包装盒系列"><span class="prod-tag">销售包装</span></div>
-        <div class="prod-body">
-          <h3>彩印包装盒系列</h3>
-          <p>白卡彩盒、瓦楞彩箱，哑膜 / 亮膜 / UV / 烫金工艺，让产品在货架上自带高级感。</p>
-          <div class="prod-specs"><span>四色胶印</span><span>表面整饰</span><span>精品礼盒</span></div>
-          <span class="prod-link">查看详情 →</span>
-        </div>
-      </a>
-      <a class="prod-card reveal" data-delay="2" href="products.html">
-        <div class="prod-thumb"><img src="assets/img/cushion.jpg" alt="缓冲防护材料"><span class="prod-tag">缓冲防护</span></div>
-        <div class="prod-body">
-          <h3>缓冲防护材料</h3>
-          <p>EPE 珍珠棉、气泡膜、气柱袋、护角与蜂窝纸板，为易碎易刮物品提供软着陆。</p>
-          <div class="prod-specs"><span>定制裁形</span><span>防潮防震</span><span>环保可回收</span></div>
-          <span class="prod-link">查看详情 →</span>
-        </div>
-      </a>
-      <a class="prod-card reveal" href="products.html">
-        <div class="prod-thumb"><img src="assets/img/film.jpg" alt="膜类与打包耗材"><span class="prod-tag">包装耗材</span></div>
-        <div class="prod-body">
-          <h3>膜类与打包耗材</h3>
-          <p>缠绕膜、封箱胶带、打包带、收缩膜，仓库发货所需的成套耗材一站配齐。</p>
-          <div class="prod-specs"><span>高拉伸</span><span>强粘着</span><span>批量优惠</span></div>
-          <span class="prod-link">查看详情 →</span>
-        </div>
-      </a>
-      <a class="prod-card reveal" data-delay="1" href="products.html">
-        <div class="prod-thumb"><img src="assets/img/label.jpg" alt="卷筒不干胶标签"><span class="prod-tag">标签耗材</span></div>
-        <div class="prod-body">
-          <h3>卷筒不干胶标签</h3>
-          <p>热敏、铜版与合成纸卷筒标签，物流面单、商品条码、食品与日化标签均可定制模切与印刷。</p>
-          <div class="prod-specs"><span>热敏 / 铜版</span><span>模切定制</span><span>条码面单</span></div>
-          <span class="prod-link">查看详情 →</span>
-        </div>
-      </a>
-      <a class="prod-card reveal" data-delay="2" href="products.html">
-        <div class="prod-thumb"><img src="assets/img/ribbon.jpg" alt="热转印碳带"><span class="prod-tag">标签耗材</span></div>
-        <div class="prod-body">
-          <h3>热转印碳带</h3>
-          <p>蜡基、混合基与树脂基碳带，适配主流条码打印机，打印清晰、耐刮耐摩擦，附技术选型建议。</p>
-          <div class="prod-specs"><span>蜡基 / 混合基</span><span>树脂基</span><span>全规格</span></div>
-          <span class="prod-link">查看详情 →</span>
-        </div>
-      </a>
-      <a class="prod-card reveal" href="products.html">
-        <div class="prod-thumb"><img src="assets/img/packing.jpg" alt="纸护角与蜂窝纸板"><span class="prod-tag">加固防护</span></div>
-        <div class="prod-body">
-          <h3>纸护角与蜂窝纸板</h3>
-          <p>边角加固、托盘护边、层间隔板，以纸代木，轻量化同时提升堆码强度。</p>
-          <div class="prod-specs"><span>以纸代木</span><span>托盘配套</span><span>可回收</span></div>
-          <span class="prod-link">查看详情 →</span>
-        </div>
-      </a>
-      <a class="prod-card reveal" data-delay="1" href="solutions.html">
-        <div class="prod-thumb"><img src="assets/img/hero.jpg" alt="电商配套服务"><span class="prod-tag">电商服务</span></div>
-        <div class="prod-body">
-          <h3>电商配套服务</h3>
-          <p>代贴标、代打包、一件代发与店铺耗材套餐，把发货环节外包出去，旺季也能按时出单。</p>
-          <div class="prod-specs"><span>代贴标</span><span>代打包</span><span>一件代发</span></div>
-          <span class="prod-link">了解服务 →</span>
-        </div>
-      </a>
-      <a class="prod-card reveal" data-delay="2" href="solutions.html">
-        <div class="prod-thumb"><img src="assets/img/about.jpg" alt="定制包装方案"><span class="prod-tag">定制服务</span></div>
-        <div class="prod-body">
-          <h3>定制包装方案</h3>
-          <p>按产品形态与运输链路量身设计，从选材到结构打样，给出降本增效的整箱方案。</p>
-          <div class="prod-specs"><span>免费设计</span><span>48H 打样</span><span>降本建议</span></div>
-          <span class="prod-link">了解方案 →</span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- 服务流程 -->
-<section class="section">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="kicker">SERVICE PROCESS</span>
-      <h2>四步完成包装定制</h2>
-      <p>标准化服务流程，让每一次合作都清晰、高效、可预期。</p>
-    </div>
-    <div class="steps">
-      <div class="step reveal"><div class="step-no">01</div><h3>需求沟通</h3><p>告知产品尺寸、重量与运输方式，或直接寄样，我们 24 小时内给出初步建议与报价。</p></div>
-      <div class="step reveal" data-delay="1"><div class="step-no">02</div><h3>设计打样</h3><p>确定材质、结构与版面，提供图文设计制作与样箱样盒，确认效果后再批量下单。</p></div>
-      <div class="step reveal" data-delay="2"><div class="step-no">03</div><h3>采购质检</h3><p>按确认的规格组织货源，对尺寸公差、印刷色差与粘合强度逐批抽检后方可入库。</p></div>
-      <div class="step reveal" data-delay="3"><div class="step-no">04</div><h3>仓储配送</h3><p>可入我方普通货物仓库按需分批发货，或经国内货运代理直发客户与终端，全程跟单。</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 行业应用 -->
-<section class="section industry-band">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="kicker">INDUSTRIES</span>
-      <h2>服务行业</h2>
-      <p>不同行业的运输链路与货架场景差异巨大，我们按行业沉淀了成熟的包装组合经验。</p>
-    </div>
-    <div class="ind-grid">
-      <div class="ind-card reveal"><div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7M7.5 20a1.8 1.8 0 100-3.6 1.8 1.8 0 000 3.6zM17.5 20a1.8 1.8 0 100-3.6 1.8 1.8 0 000 3.6z"/></svg></div><h3>电商物流</h3><p>飞机盒、快递箱与面单标签现货常备，折叠省仓储，旺季补单不掉链。</p></div>
-      <div class="ind-card reveal" data-delay="1"><div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><path d="M7 3v7a3 3 0 006 0V3M10 3v18M17 3c-1.5 2-2 4-2 6.5 0 2 1 2.5 2 2.5s2-.5 2-2.5C19 7 18.5 5 17 3zM17 12v9"/></svg></div><h3>食品生鲜</h3><p>生鲜泡沫箱、防油纸盒、淋膜纸杯等食品接触级包装配套供应。</p></div>
-      <div class="ind-card reveal" data-delay="2"><div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div><h3>电子电器</h3><p>珍珠棉定位内衬 + 防静电网格棉，精密器件全程软防护。</p></div>
-      <div class="ind-card reveal"><div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><path d="M10 3h4v4h-4zM6 7h12v14H6zM9 11h6M9 15h6"/></svg></div><h3>医药日化</h3><p>高白卡彩盒、说明盒与礼品盒，印刷清晰、规格精准。</p></div>
-      <div class="ind-card reveal" data-delay="1"><div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.3 1.9l.1.1a2 2 0 11-2.9 2.9l-.1-.1a1.7 1.7 0 00-1.9-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.2a1.7 1.7 0 00-1-1.5 1.7 1.7 0 00-1.9.3l-.1.1a2 2 0 11-2.9-2.9l.1-.1a1.7 1.7 0 00.3-1.9 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.2a1.7 1.7 0 001.5-1 1.7 1.7 0 00-.3-1.9l-.1-.1a2 2 0 112.9-2.9l.1.1a1.7 1.7 0 001.9.3h.1a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.2a1.7 1.7 0 001 1.5h.1a1.7 1.7 0 001.9-.3l.1-.1a2 2 0 112.9 2.9l-.1.1a1.7 1.7 0 00-.3 1.9v.1a1.7 1.7 0 001.5 1h.2a2 2 0 110 4h-.2a1.7 1.7 0 00-1.5 1z"/></svg></div><h3>工业制造</h3><p>七层重载纸箱、纸护角与托盘组合，替代木箱降本减重。</p></div>
-      <div class="ind-card reveal" data-delay="2"><div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.6 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3z"/></svg></div><h3>外贸出口</h3><p>出口标准纸箱、唛头印刷与装箱优化，助您顺利通关、安全到港。</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 关于我们 -->
-<section class="section">
-  <div class="container about-split">
-    <div class="about-media reveal">
-      <img src="assets/img/about.jpg" alt="芝诚包装生产线">
-      <div class="about-badge"><b>2021</b><i>成立于上海</i></div>
-    </div>
-    <div class="about-copy reveal" data-delay="1">
-      <span class="kicker">ABOUT US</span>
-      <h2>以诚立信，做客户身边的包装供应伙伴</h2>
-      <p>上海芝诚包装材料有限公司成立于 2021 年，注册资本 500 万元，坐落于上海市闵行区元江路 5500 号。公司以包装材料及制品销售为核心业务，同时经营纸制品、塑料制品、金属制品销售，并提供包装服务、普通货物仓储、国内货物运输代理与图文设计制作等配套服务。</p>
-      <p>此外，公司业务还涵盖互联网销售、信息咨询服务、新材料技术研发以及货物进出口，努力成为客户从选材、设计到仓储发运的一站式包装供应伙伴。</p>
-      <ul class="check-list">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>小批量可起订，打样灵活</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>一般纳税人资质，合规开票</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>可提供仓储与运输代理</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>图文设计到打样一站衔接</li>
-      </ul>
-      <a class="btn btn-plum" href="about.html">了解更多
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-
-    <div class="home-clients reveal" data-delay="2">
-      <div class="hc-head">
-        <span class="kicker">CLIENTS &amp; PARTNERS</span>
-        <h3>标签智造基地服务的部分客户</h3>
-      </div>
-      <div class="pill-list">
-        <span>特斯拉 TESLA</span><span>蔚来 NIO</span><span>德国马牌 CONTINENTAL</span><span>京东方 BOE</span>
-        <span>科大讯飞 iFLYTEK</span><span>联宝科技 LCFC</span><span>格力 GREE</span><span>美的 MIDEA</span>
-        <span>洽洽食品</span><span>荣事达 ROYALSTAR</span>
-      </div>
-      <p class="hc-note">以上为客户长期服务记录，来源于合肥标签印刷基地；具体合作范围以双方协议为准。<a href="products.html">了解标签智造体系 →</a><span class="dot-sep">|</span><a href="https://www.lxui.com" target="_blank" rel="noopener">合肥灵星科技 ↗</a></p>
-    </div>
-  </div>
-</section>
-
-<!-- 新闻资讯 -->
-<section class="section alt">
-  <div class="container">
-    <div class="section-head reveal" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;max-width:none">
-      <div style="max-width:620px">
-        <span class="kicker">NEWS</span>
-        <h2>新闻与行业资讯</h2>
-        <p>包装行业动态、实用包装知识与公司公告，持续更新。</p>
-      </div>
-      <a class="more-link" href="news.html">更多资讯
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-    <div class="news-grid">
-      <a class="news-card reveal" href="news.html">
-        <div class="news-thumb"><img src="assets/img/hero.jpg" alt="行业动态"></div>
-        <div class="news-body">
-          <div class="news-meta"><em>行业动态</em><span>2026-11-02</span></div>
-          <h3>秋季电商大促将至：发货高峰期，包装备货这样做更稳</h3>
-          <p>提前锁定常用规格、建立安全库存与应急补单机制，是旺季发货不断档的关键。</p>
-        </div>
-      </a>
-      <a class="news-card reveal" data-delay="1" href="news.html">
-        <div class="news-thumb"><img src="assets/img/carton.jpg" alt="实用指南"></div>
-        <div class="news-body">
-          <div class="news-meta"><em>实用指南</em><span>2026-10-18</span></div>
-          <h3>瓦楞纸箱如何选楞型？三层、五层、七层一篇讲清楚</h3>
-          <p>楞型决定缓冲与印刷表现，层数决定承重上限。选对结构，成本与保护兼得。</p>
-        </div>
-      </a>
-      <a class="news-card reveal" data-delay="2" href="news.html">
-        <div class="news-thumb"><img src="assets/img/film.jpg" alt="环保包装"></div>
-        <div class="news-body">
-          <div class="news-meta"><em>行业动态</em><span>2026-09-26</span></div>
-          <h3>以纸代塑、以纸代木：绿色包装正在成为采购硬指标</h3>
-          <p>蜂窝纸板、纸护角与纸浆模塑应用加速普及，环保可回收已成为品牌出海加分项。</p>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section" style="padding-top:0">
-  <div class="container">
-    <div class="cta-band reveal">
-      <div>
-        <h2>有包装需求？先聊一聊，报价不花钱</h2>
-        <p>提供尺寸、重量与用途即可，24 小时内获取选材建议与报价方案。</p>
-      </div>
-      <a class="btn btn-primary" href="contact.html">立即咨询
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- 页脚 -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a class="logo" href="index.html">
-          <img class="logo-mark" src="assets/img/logo-z-white.png" alt="芝诚包装 Z 字商标（白色版）">
-          <span class="logo-text"><b>芝诚包装</b><i>ZHICHENG PACKAGING</i></span>
-        </a>
-        <p>上海芝诚包装材料有限公司成立于 2021 年，位于上海市闵行区。以包装材料及制品销售为核心，同时经营纸制品、塑料制品、金属制品销售，并提供包装服务、普通货物仓储、国内货物运输代理与图文设计制作等配套服务。</p>
-      </div>
-      <div>
-        <h4>快速导航</h4>
-        <ul>
-          <li><a href="products.html">产品中心</a></li>
-          <li><a href="solutions.html">解决方案</a></li>
-          <li><a href="about.html">关于我们</a></li>
-          <li><a href="news.html">新闻资讯</a></li>
-          <li><a href="contact.html">联系我们</a></li>
-          <li><a href="https://www.lxui.com" target="_blank" rel="noopener">合肥灵星科技 ↗</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>产品中心</h4>
-        <ul>
-          <li><a href="products.html">瓦楞纸箱系列</a></li>
-          <li><a href="products.html">彩印包装盒系列</a></li>
-          <li><a href="products.html">缓冲防护材料</a></li>
-          <li><a href="products.html">膜类与打包耗材</a></li>
-          <li><a href="products.html">纸护角与蜂窝纸板</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>联系方式</h4>
-        <ul class="footer-contact">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-5.1-7-11a7 7 0 1114 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>上海市闵行区元江路 5500 号第 1 幢</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8 9.9a16 16 0 006.1 6.1l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7A2 2 0 0122 16.9z"/></svg><a href="tel:13866710707">138 6671 0707</a></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><a href="mailto:shang0707@vip.163.com">shang0707@vip.163.com</a></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>周一至周六 8:30 - 18:00</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="year">2026</span> 上海芝诚包装材料有限公司 版权所有 </span>
-      <span>一站式包装解决方案服务商</span>
-    </div>
-  </div>
-</footer>
-
-<a class="back-top" href="#top" aria-label="返回顶部">
-  <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-</a>
-<script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
