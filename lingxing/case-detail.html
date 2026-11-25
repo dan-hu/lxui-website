@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>案例详情｜灵星标签</title>
+  <meta name="description" content="灵星标签客户案例详情：客户遇到的问题、我们采用的材料与工艺方案、最终效果。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/logo/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+</head>
+<body data-page="cases">
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="wrap page-hero__inner" id="case-hero">
+      <div class="crumb"><a href="index.html">首页</a> / <a href="cases.html">客户案例</a> / 详情</div>
+      <h1 id="case-title">加载中…</h1>
+      <p id="case-summary"></p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap detail-grid">
+      <div>
+        <img class="detail-hero-img" id="case-cover" src="" alt="">
+        <div class="prose" id="case-body">
+          <div class="skeleton" style="height:200px"></div>
+        </div>
+      </div>
+      <aside class="detail-aside">
+        <h4>项目信息</h4>
+        <dl id="case-meta">
+          <dt>客户</dt><dd>—</dd>
+          <dt>行业</dt><dd>—</dd>
+          <dt>完成时间</dt><dd>—</dd>
+        </dl>
+        <a class="btn btn--lime" href="contact.html" style="margin-top:24px;width:100%;justify-content:center">做同类项目</a>
+        <a class="btn btn--ghost" href="cases.html" style="margin-top:10px;width:100%;justify-content:center">返回案例列表</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec sec--paper2" id="related-section" style="display:none">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">相关案例</div>
+          <h2 class="sec-title">同行业其他项目</h2>
+        </div>
+      </div>
+      <div class="grid grid--3" id="related-list" style="background:transparent;border:0;gap:24px"></div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/static-data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/case-detail.js"></script>
+</body>
+</html>

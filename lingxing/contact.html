@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>联系我们｜灵星标签</title>
+  <meta name="description" content="联系灵星标签：合肥市高新区龙湖光年中心 3410 室，电话 0551-65320200，业务联系人 13866710707，邮箱 shang0707@vip.163.com。上海设工厂。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/logo/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="wrap page-hero__inner">
+      <div class="crumb"><a href="index.html">首页</a> / 联系我们</div>
+      <h1>说清楚贴在哪儿，<br>剩下的交给我们</h1>
+      <p>把你的产品、贴标表面、使用环境和预计用量写下来，我们给出材质建议与报价，需要的话先寄小样。</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap split" style="align-items:start">
+      <!-- 左：询价表单 -->
+      <div class="reveal">
+        <div class="eyebrow">询价与索样</div>
+        <h2 class="sec-title" style="font-size:clamp(22px,2.6vw,30px)">填写需求，1 个工作日内回复</h2>
+        <form data-inquiry style="margin-top:28px" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="f-name">联系人 <span class="req">*</span></label>
+              <input id="f-name" name="name" type="text" placeholder="您的姓名" maxlength="30" required>
+            </div>
+            <div class="field">
+              <label for="f-company">公司名称</label>
+              <input id="f-company" name="company" type="text" placeholder="所在公司" maxlength="60">
+            </div>
+            <div class="field">
+              <label for="f-phone">联系电话 <span class="req">*</span></label>
+              <input id="f-phone" name="phone" type="tel" placeholder="手机或座机" maxlength="20" required>
+            </div>
+            <div class="field">
+              <label for="f-email">邮箱</label>
+              <input id="f-email" name="email" type="email" placeholder="用于接收报价单" maxlength="60">
+            </div>
+            <div class="field">
+              <label for="f-biz">需求品类</label>
+              <select id="f-biz" name="biz_type">
+                <option value="">请选择（可留空）</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-qty">预计用量</label>
+              <input id="f-qty" name="quantity" type="text" placeholder="如：每月 5 万枚" maxlength="40">
+            </div>
+            <div class="field field--full">
+              <label for="f-msg">需求描述</label>
+              <textarea id="f-msg" name="message" maxlength="1000"
+                placeholder="例如：贴在 PET 瓶身上，冷藏环境 -18℃，手工贴标，需要食品级材料，年用量 60 万枚"></textarea>
+              <span class="field__hint">写清"贴什么材质、什么环境、怎么贴、多少量"，我们回复会更准。</span>
+            </div>
+          </div>
+          <button class="btn btn--lime" type="submit" style="margin-top:22px">提交需求 <span class="arrow">→</span></button>
+          <div class="form-status" role="status"></div>
+          <p class="field__hint" style="margin-top:14px">提交的信息仅用于业务联系，不会用于其他用途。</p>
+        </form>
+      </div>
+
+      <!-- 右：联系信息 -->
+      <div class="reveal">
+        <div class="eyebrow">联系方式</div>
+        <h2 class="sec-title" style="font-size:clamp(22px,2.6vw,30px)">合肥 · 上海</h2>
+        <dl class="contact-list" style="margin-top:26px">
+          <div class="contact-item">
+            <dt>业务联系</dt>
+            <dd>
+              <a href="tel:13866710707" data-setting="mobile">13866710707</a>（<span data-setting="contact_person">商秀英</span>）<br>
+              <a href="tel:055165320200" data-setting="phone">0551-65320200</a>
+            </dd>
+          </div>
+          <div class="contact-item">
+            <dt>邮箱</dt>
+            <dd><a href="mailto:shang0707@vip.163.com" data-setting="email">shang0707@vip.163.com</a></dd>
+          </div>
+          <div class="contact-item">
+            <dt>合肥公司</dt>
+            <dd data-setting="address_hefei">合肥市高新区龙湖光年中心 3410 室</dd>
+          </div>
+          <div class="contact-item">
+            <dt>上海工厂</dt>
+            <dd data-setting="factory_shanghai">上海市金山区枫泾镇钱明东路 915 号 C1 栋</dd>
+          </div>
+          <div class="contact-item">
+            <dt>工作时间</dt>
+            <dd data-setting="work_hours">周一至周六 08:30 - 17:30</dd>
+          </div>
+        </dl>
+        <div style="margin-top:26px;padding:20px;border:1px solid var(--line);background:var(--white);font-size:13.5px;color:var(--muted);line-height:1.8">
+          <strong style="color:var(--ink);display:block;margin-bottom:6px">想先看实物？</strong>
+          电话或表单里说明"要样品"，我们把相近材质的小样寄给你，在自己的产线上试贴，比看参数可靠。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <a class="fab" href="#f-name">填写需求</a>
+
+  <script src="js/static-data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

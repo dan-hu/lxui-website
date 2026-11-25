@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RFID 智能方案｜灵星标签</title>
+  <meta name="description" content="灵星 RFID 智能化整体解决方案：UHF RFID 标签 + EMQX 物联网中台 + 读写设备与业务系统对接，面向医药仓储 GSP 合规、食品冷链与餐饮供应链、智能仓库，实现自动出入库、无人盘点、批次溯源与效期预警。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/logo/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+</head>
+<body data-page="rfid">
+  <div id="site-header"></div>
+
+  <!-- ======================= 主视觉 ======================= -->
+  <section class="page-hero">
+    <div class="wrap page-hero__inner">
+      <div class="crumb"><a href="index.html">首页</a> / RFID 智能方案</div>
+      <h1>让每一箱货，<br>自己报出<em>身份</em></h1>
+      <p>
+        纸质标签贴在外面，得靠人找、靠人扫；RFID 标签把芯片做进标签里，靠设备读。
+        我们把标签、天线、读写器、物联网中台和你的 WMS / ERP 连成一条线——
+        不用开箱、不用逐件扫码，也能知道每一托货在哪、还有多久过期。
+      </p>
+      <div class="hero__actions" style="margin-top:32px">
+        <a class="btn btn--lime" href="contact.html">预约现场勘测 <span class="arrow">→</span></a>
+        <a class="btn btn--light" href="#pain">先看它解决什么问题</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 关键数字 ======================= -->
+  <section class="sec sec--tight">
+    <div class="wrap">
+      <div class="kpi-strip">
+        <div class="kpi">
+          <b>≥99.5<i>%</i></b>
+          <span>复杂场景识别率（金属货架、液体包装、冷链高湿，按约定点位与标签选型实测）</span>
+        </div>
+        <div class="kpi">
+          <b>70–90<i>%</i></b>
+          <span>盘点与收货环节的人工工时下降幅度</span>
+        </div>
+        <div class="kpi">
+          <b>8<i>阶段</i></b>
+          <span>从现场勘测到培训验收的标准交付流程</span>
+        </div>
+        <div class="kpi">
+          <b>7–15<i>天</i></b>
+          <span>上线试运行期，边跑边调识别率</span>
+        </div>
+      </div>
+      <p style="margin-top:16px;font-size:12.5px;color:var(--muted)">
+        说明：以上效率与识别率为同类项目的实测区间，实际结果取决于场地结构、货品材质、标签位置与读写器点位密度。我们按勘测结果给出书面验收指标，不用行业最大值做承诺。
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================= 痛点 ======================= -->
+  <section class="sec" id="pain">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">为什么需要它</div>
+          <h2 class="sec-title">六个老问题，<br>不是靠加班能解决的</h2>
+          <p class="sec-lead">
+            条码能干的事，到"批量、隔箱、冷链、可追溯"这四件事上就到头了。
+            下面是仓库和供应链里最常见的六个卡点，以及 RFID 各自的解法。
+          </p>
+        </div>
+      </div>
+
+      <div class="pain-list">
+        <article class="pain reveal">
+          <div class="pain__no">01</div>
+          <div>
+            <h3>人工逐件扫码，盘一次库要好几天</h3>
+            <p>手写登记 + 月度全盘，一次盘库停两天工；盘点频次上不去，库存就只能是"上个月的库存"。</p>
+          </div>
+          <div class="pain__fix">
+            <b>RFID 的做法</b>
+            整箱、整托一次群读，手持机走过货架即可完成全盘或抽盘，不用开箱、不用对条码，盘点从"月度事件"变成"每天可做"。
+          </div>
+        </article>
+
+        <article class="pain reveal">
+          <div class="pain__no">02</div>
+          <div>
+            <h3>账实不符，差异说不清出在哪</h3>
+            <p>出入库数据滞后、漏登、错登，时间一长就变成积压、过期和损耗，而且追不到责任环节。</p>
+          </div>
+          <div class="pain__fix">
+            <b>RFID 的做法</b>
+            出入库自动识别并自动记账，每一次变动都带时间、设备、操作人，差异自动比对到具体单号。
+          </div>
+        </article>
+
+        <article class="pain reveal">
+          <div class="pain__no">03</div>
+          <div>
+            <h3>批次与效期管不清，先进先出靠人记</h3>
+            <p>同一种货几个批次混放，谁先到期靠仓管员经验；一旦错发，就是整批报废加客诉。</p>
+          </div>
+          <div class="pain__fix">
+            <b>RFID 的做法</b>
+            标签写入批次、生产日期与效期，系统按效期自动排序出库，近效期提前预警，强制先进先出。
+          </div>
+        </article>
+
+        <article class="pain reveal">
+          <div class="pain__no">04</div>
+          <div>
+            <h3>医药仓储的合规材料，平时补不齐</h3>
+            <p>没有完整追溯链、没有温湿度留痕、没有不可篡改的操作日志，飞行检查前只能临时补记录。</p>
+          </div>
+          <div class="pain__fix">
+            <b>RFID 的做法</b>
+            一物一码 + 温感标签 + 全量日志归档，从入库到出库全生命周期可查，检查时导出即用。
+          </div>
+        </article>
+
+        <article class="pain reveal">
+          <div class="pain__no">05</div>
+          <div>
+            <h3>冷链、液体、金属箱体，条码根本读不到</h3>
+            <p>结霜、凝露、金属箱、液体包装，条码污损或反光就失效，普通 RFID 在这种环境下识别率也掉得厉害。</p>
+          </div>
+          <div class="pain__fix">
+            <b>RFID 的做法</b>
+            按场景选抗金属、防水、无源温感标签，配合定向窄波束天线与点位设计，把"读不到"变成可验收的识别率。
+          </div>
+        </article>
+
+        <article class="pain reveal">
+          <div class="pain__no">06</div>
+          <div>
+            <h3>设备各自为政，数据汇不起来</h3>
+            <p>读写器、PDA、温湿度探头各有一套后台，数据零散，想看的报表要人工拼。</p>
+          </div>
+          <div class="pain__fix">
+            <b>RFID 的做法</b>
+            中间加一层物联网消息中台，所有设备数据先归集、去重、过滤、缓存，再统一喂给 WMS / ERP 和看板。
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 三层架构 ======================= -->
+  <section class="sec sec--dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">系统怎么搭</div>
+          <h2 class="sec-title">三层架构，<br>中间那层是稳定性的关键</h2>
+          <p class="sec-lead">
+            很多项目栽在中间层：几百个标签同时上报，数据乱序、重复、丢包，上层系统就成了一堆错账。
+            我们用工业级 EMQX 消息中台做缓冲，把这件事在架构上解决掉。
+          </p>
+        </div>
+      </div>
+
+      <div class="arch">
+        <div class="arch__layer reveal">
+          <div>
+            <div class="arch__tag">LAYER 03 / 业务应用层</div>
+            <h3>与你现有系统对接</h3>
+            <p>不替换现有 WMS / ERP / TMS，只做接口对接，改造量小、上线快。</p>
+          </div>
+          <div>
+            <p>自动入库、自动出库、自动盘点、批次溯源、效期预警、温湿度追溯、报表与可视化看板。</p>
+            <div class="chips">
+              <span class="chip">WMS 对接</span>
+              <span class="chip">ERP 对接</span>
+              <span class="chip">TMS 对接</span>
+              <span class="chip">可视化看板</span>
+              <span class="chip">台账自动生成</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch__layer arch__layer--accent reveal">
+          <div>
+            <div class="arch__tag">LAYER 02 / 物联网传输中台</div>
+            <h3>EMQX 消息中台</h3>
+            <p>整套系统的稳定底座：全设备数据汇总、去重、过滤、缓存、断网续传。</p>
+          </div>
+          <div>
+            <p>弱网或断网时数据先存本地，联网后自动补传；误读、串读、重复上报在这一层被拦掉，上层拿到的永远是干净数据。</p>
+            <div class="chips">
+              <span class="chip">数据去重</span>
+              <span class="chip">误读过滤</span>
+              <span class="chip">断网续传</span>
+              <span class="chip">设备在线监控</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch__layer reveal">
+          <div>
+            <div class="arch__tag">LAYER 01 / 感知采集层</div>
+            <h3>标签、天线与读写设备</h3>
+            <p>按货品材质和场地结构选型，这一层选错了，上面做得再好也读不准。</p>
+          </div>
+          <div>
+            <p>定制超高频 RFID 标签、抗干扰天线、固定式读写器、通道门、手持盘点 PDA、无源温感标签。</p>
+            <div class="chips">
+              <span class="chip">UHF 标签</span>
+              <span class="chip">抗金属标签</span>
+              <span class="chip">冷链防水标签</span>
+              <span class="chip">温感标签</span>
+              <span class="chip">固定式读写器</span>
+              <span class="chip">通道门</span>
+              <span class="chip">手持 PDA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arch__flow">
+        <span>↑ 数据上行</span>
+        <span>↓ 指令下行</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 核心技术优势 ======================= -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">核心技术优势</div>
+          <h2 class="sec-title">六个能力，<br>决定这套系统能不能长期跑</h2>
+          <p class="sec-lead">
+            硬件谁都能买到，差别在于复杂场景读不读得准、断网会不会丢数据、上层系统拿到的数据干不干净。
+          </p>
+        </div>
+      </div>
+
+      <div class="adv-grid">
+        <div class="adv reveal">
+          <div class="adv__no">01 / TAGS &amp; ANTENNA</div>
+          <h3>抗干扰识别能力强</h3>
+          <p>针对金属货架、液体包装、冷链高湿环境做专项硬件优化，复杂场景识别率 ≥99.5%（按约定点位与标签选型实测）。</p>
+        </div>
+        <div class="adv reveal">
+          <div class="adv__no">02 / BULK READ</div>
+          <h3>高速群读批量采集</h3>
+          <p>一次识别上百枚标签，整箱、整托批量盘点，收货与盘点效率提升 80% 以上。</p>
+        </div>
+        <div class="adv reveal">
+          <div class="adv__no">03 / OFFLINE</div>
+          <h3>断网可用、数据不丢</h3>
+          <p>边缘缓存机制，弱网或断网时数据先存本地，联网后自动补传，账面不会停在半天前。</p>
+        </div>
+        <div class="adv reveal">
+          <div class="adv__no">04 / DATA CLEANING</div>
+          <h3>数据精准过滤</h3>
+          <p>系统自动过滤误读、串读与重复上报，同一件货不会因为被读三次就变成三件库存。</p>
+        </div>
+        <div class="adv reveal">
+          <div class="adv__no">05 / TRACEABILITY</div>
+          <h3>全链路可追溯、不可篡改</h3>
+          <p>出入库、温湿度与设备日志永久留存，审计、合规与客诉追溯时能直接导出，不用凭记忆还原。</p>
+        </div>
+        <div class="adv reveal">
+          <div class="adv__no">06 / INTEGRATION</div>
+          <h3>兼容性强、改造量小</h3>
+          <p>不替换现有 WMS / ERP / TMS，只做接口对接，老系统继续用，新能力长在上面。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 两个场景 ======================= -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">行业场景</div>
+          <h2 class="sec-title">先做透两个场景，<br>再谈通用方案</h2>
+          <p class="sec-lead">
+            医药和食品这两个行业，一个怕查、一个怕坏，对识别率和留痕的要求最狠。
+            这两个场景跑通了，其他仓储场景基本是同一套逻辑换个配置。
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario-grid">
+        <article class="scenario reveal">
+          <div class="scenario__kicker">SCENARIO 01 / 医药仓储</div>
+          <h3>GSP 合规管理</h3>
+          <ul class="points">
+            <li>一物一码全溯源：每批药品绑唯一标签，写入批次、生产日期、效期、厂家与质检信息，入库到出库全生命周期可查。</li>
+            <li>无人盘点：不开箱、不扫码，设备自动识别货架药品，全盘与抽盘都能按天做。</li>
+            <li>温湿度全程监控：冷链药品配无源温感标签，实时采集存储与运输温度，超温自动报警并归档。</li>
+            <li>效期与批次管控：近效期自动预警，出库强制先进先出，减少过期损耗。</li>
+            <li>合规留痕：操作日志、温度曲线、流转记录永久留存，飞行检查时直接导出。</li>
+          </ul>
+          <div class="scenario__kpi">
+            典型收益：盘点人力下降 70% 以上，效期损耗与账实差异同步收窄，检查前不再补台账。
+          </div>
+        </article>
+
+        <article class="scenario reveal">
+          <div class="scenario__kicker">SCENARIO 02 / 食品与餐饮供应链</div>
+          <h3>一箱一码全链路</h3>
+          <ul class="points">
+            <li>一箱一码：每个周转箱、物流箱绑唯一身份，覆盖出厂—物流—入库—门店验收全流程。</li>
+            <li>批量验收：门店收货走通道门自动群读，不用逐件核验，收货效率提升明显。</li>
+            <li>冷链稳定识别：针对含水食材、金属包装、低温高湿环境做硬件与点位优化。</li>
+            <li>损耗可控：库存、周转、效期全程可视，减少积压、过期与错发。</li>
+            <li>责任可追：哪一箱在哪个环节出的问题，能在系统里定位到时间与操作人。</li>
+          </ul>
+          <div class="scenario__kpi">
+            典型收益：门店收货环节效率提升 70% 以上，周转箱丢失与错发明显减少。
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= RFID 标签产品系列 ======================= -->
+  <section class="sec sec--paper2" id="tag-types">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">数据载体</div>
+          <h2 class="sec-title">六类 RFID 标签，<br>按场景选封装</h2>
+          <p class="sec-lead">
+            方案能不能落地，一半取决于标签选得对不对。下面是常用六类，湿 inlay 与复合标签并行——
+            复合、写码与印面都在我们的标签产线上完成。
+          </p>
+        </div>
+        <a class="link-more" href="products.html#rfid-label">看产品页 <span class="arrow">→</span></a>
+      </div>
+
+      <div class="tag-prod-grid">
+        <div class="tag-prod reveal">
+          <div class="tag-prod__freq">860–960 MHz · EPC Class1 Gen2 / ISO 18000-6C</div>
+          <h3>超高频 UHF 电子标签</h3>
+          <p>读取距离可达数米，支持多标签防碰撞群读，是仓储物流、零售盘点与资产管理的首选频段。</p>
+          <div class="tag-prod__specs"><span class="tag">1–10 m 读距</span><span class="tag">批量防碰撞</span><span class="tag">仓储首选</span></div>
+        </div>
+        <div class="tag-prod reveal">
+          <div class="tag-prod__freq">13.56 MHz · ISO 14443 / 15693</div>
+          <h3>高频 HF 电子标签</h3>
+          <p>近场读取稳定、抗干扰强。读距短反而是优点——适合要求"贴近才认"的票卡、档案与工位管理。</p>
+          <div class="tag-prod__specs"><span class="tag">≤1 m 读距</span><span class="tag">近场稳定</span><span class="tag">票卡档案</span></div>
+        </div>
+        <div class="tag-prod reveal">
+          <div class="tag-prod__freq">INLAY + 面材复合 · 可贴标成品</div>
+          <h3>不干胶复合电子标签</h3>
+          <p>inlay 与铜版纸、合成纸、PET 面材复合模切，出来就是能上贴标线的成品，表面还能四色印刷与喷可变码。</p>
+          <div class="tag-prod__specs"><span class="tag">兼容贴标线</span><span class="tag">四色印刷</span><span class="tag">可变码喷印</span></div>
+        </div>
+        <div class="tag-prod reveal">
+          <div class="tag-prod__freq">隔磁衬垫结构 · 金属表面可用</div>
+          <h3>抗金属标签</h3>
+          <p>内置隔磁衬垫，贴着金属也能稳定识读，用于设备资产、钢瓶、工装夹具与车载管理。</p>
+          <div class="tag-prod__specs"><span class="tag">金属表面</span><span class="tag">设备资产</span><span class="tag">工装车载</span></div>
+        </div>
+        <div class="tag-prod reveal">
+          <div class="tag-prod__freq">PPS / PET 封装 · 耐 200℃ 以上</div>
+          <h3>耐高温标签</h3>
+          <p>过回流焊、烘烤与高温灭菌都不掉数据，用于 PCB 板、汽车零部件等高温工序的追溯。</p>
+          <div class="tag-prod__specs"><span class="tag">200℃+</span><span class="tag">PCB 追溯</span><span class="tag">高温灭菌</span></div>
+        </div>
+        <div class="tag-prod reveal">
+          <div class="tag-prod__freq">芯片嵌入纸卡 · 可选 EAS 一体</div>
+          <h3>RFID 服装吊牌</h3>
+          <p>芯片藏在吊牌纸卡里，一面做品牌展示，一面做门店盘点与防盗，收银台一次读完整篮商品。</p>
+          <div class="tag-prod__specs"><span class="tag">品牌展示</span><span class="tag">智能盘点</span><span class="tag">EAS 防盗</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 频段选型速查 ======================= -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">选型速查</div>
+          <h2 class="sec-title">先定频段，<br>再谈型号和价格</h2>
+          <p class="sec-lead">频段决定读距、抗干扰能力与成本。拿不准就把货品材质、读距要求和场地照片发给我们，我们来匹配。</p>
+        </div>
+      </div>
+
+      <table class="spec-table reveal">
+        <thead>
+          <tr>
+            <th>频段</th>
+            <th>典型频率</th>
+            <th>读取距离</th>
+            <th>特点</th>
+            <th style="width:26%">典型应用</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>低频 LF</td>
+            <td>125 kHz</td>
+            <td>&lt; 10 cm</td>
+            <td>穿透液体与动物体能力强，读取速度慢</td>
+            <td>动物识别、门禁、工具防伪</td>
+          </tr>
+          <tr>
+            <td>高频 HF</td>
+            <td>13.56 MHz</td>
+            <td>&lt; 1 m</td>
+            <td>近场稳定，抗金属与液体干扰较好</td>
+            <td>图书档案、票卡、产线工位</td>
+          </tr>
+          <tr>
+            <td>超高频 UHF</td>
+            <td>860–960 MHz</td>
+            <td>1–10 m</td>
+            <td>远距离、批量防碰撞识读，主流商用频段</td>
+            <td>仓储物流、零售盘点、资产管理</td>
+          </tr>
+          <tr>
+            <td>有源 / 双频</td>
+            <td>2.4 GHz / 复合</td>
+            <td>30 m+</td>
+            <td>主动发射、可定位追踪，单价较高</td>
+            <td>车辆管理、人员定位、集装箱</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ======================= 硬件清单 ======================= -->
+  <section class="sec sec--paper2">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">硬件配置</div>
+          <h2 class="sec-title">四类硬件，<br>按场景配而不是按套餐卖</h2>
+          <p class="sec-lead">
+            同一套软件，配不同的标签和天线，成本能差一倍。我们先勘测再报价，不做"一套方案打天下"。
+          </p>
+        </div>
+      </div>
+
+      <table class="spec-table reveal">
+        <thead>
+          <tr>
+            <th>类别</th>
+            <th>配置内容</th>
+            <th style="width:34%">选型要点</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>超高频 RFID 标签</td>
+            <td>普通不干胶标签、抗金属标签、冷链防水标签、无源温感标签</td>
+            <td>按贴标表面（金属 / 液体 / 塑料 / 纸箱）与温度区间定芯片和天线；标签本身就是印刷品，版面可同时印条码与文字。</td>
+          </tr>
+          <tr>
+            <td>RFID 读写设备</td>
+            <td>固定式 4 / 8 端口读写器、通道门读写设备、手持盘点 PDA</td>
+            <td>出入库口用固定式或通道门，货架盘点用 PDA；端口数按天线点位数量反推。</td>
+          </tr>
+          <tr>
+            <td>专业天线</td>
+            <td>圆极化天线、定向窄波束天线、高增益抗干扰天线</td>
+            <td>货架密集、通道狭窄用窄波束减少串读；金属环境用抗干扰天线并调整极化方向。</td>
+          </tr>
+          <tr>
+            <td>物联网中台</td>
+            <td>EMQX 消息中间件（数据传输、过滤、缓存、系统对接）</td>
+            <td>部署在企业内网，数据不出厂；开源版与企业版按并发量选择。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ======================= 交付能力 ======================= -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">交付能力</div>
+          <h2 class="sec-title">从 inlay 到可上线标签，<br>四道工序自己控</h2>
+          <p class="sec-lead">
+            方案里说的标签，最后要变成一卷一卷能直接上贴标机的成品。
+            这四道工序决定了到货能不能用、编码会不会错、读不出来该找谁。
+          </p>
+        </div>
+      </div>
+
+      <div class="cap-grid">
+        <div class="cap reveal">
+          <div class="cap__no">STEP 01</div>
+          <h3>inlay 复合封装</h3>
+          <p>芯片 inlay 与铜版纸、合成纸、PET 等面材复合模切，一次成型为不干胶成品标签。</p>
+        </div>
+        <div class="cap reveal">
+          <div class="cap__no">STEP 02</div>
+          <h3>可变编码喷印</h3>
+          <p>EPC / SGTIN 编码与条码按序喷印，保证编码与芯片 TID 一一对应，支持客户号段规则。</p>
+        </div>
+        <div class="cap reveal">
+          <div class="cap__no">STEP 03</div>
+          <h3>100% 读写检测</h3>
+          <p>出厂前逐枚灵敏度检测与读写校验，剔除不良芯片，到货即可上线使用。</p>
+        </div>
+        <div class="cap reveal">
+          <div class="cap__no">STEP 04</div>
+          <h3>四色印刷与模切</h3>
+          <p>品牌印刷、可变二维码与异形模切一体完成，标签既好看也能被读到。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 可验收功能 ======================= -->
+  <section class="sec sec--paper2">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">交付清单</div>
+          <h2 class="sec-title">十二项功能，<br>逐条验收</h2>
+          <p class="sec-lead">合同里按这十二条写验收标准，避免"系统上线了但不知道算不算成功"。</p>
+        </div>
+      </div>
+
+      <ul class="check-grid">
+        <li>RFID 标签批量写码、编码管理</li>
+        <li>全自动入库识别、自动记账</li>
+        <li>全自动出库识别、核销</li>
+        <li>库存智能盘点、差异自动比对</li>
+        <li>批次溯源、流转轨迹查询</li>
+        <li>药品 / 食材效期预警、库存预警</li>
+        <li>冷链温湿度实时监测、超温告警</li>
+        <li>数据过滤、去重、防串读机制</li>
+        <li>断网缓存、联网续传</li>
+        <li>设备在线监控、状态诊断</li>
+        <li>可视化数据报表、台账自动生成</li>
+        <li>WMS / ERP 系统无缝对接</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= 八阶段交付 ======================= -->
+  <section class="sec sec--dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">怎么交付</div>
+          <h2 class="sec-title">八个阶段，<br>每一步都有交付物</h2>
+          <p class="sec-lead">RFID 项目失败多半不是硬件不行，是点位没勘测、验收标准没定。流程写死，才能避免这两件事。</p>
+        </div>
+      </div>
+
+      <div class="step-grid">
+        <div class="step reveal">
+          <div class="step__no">STEP 01</div>
+          <h4>现场勘测与需求确认</h4>
+          <p>看场地环境、货架结构、网络条件，确认业务流程与要对接的系统。</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__no">STEP 02</div>
+          <h4>方案与点位设计</h4>
+          <p>硬件选型、点位布局、网络拓扑、编码规则一次定清。</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__no">STEP 03</div>
+          <h4>样品测试与封样</h4>
+          <p>现场实测读距、抗干扰与群读性能，把验收指标写进方案。</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__no">STEP 04</div>
+          <h4>供货与预调试</h4>
+          <p>硬件出厂测试、标签预写码、系统预部署，减少现场停机。</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__no">STEP 05</div>
+          <h4>现场施工部署</h4>
+          <p>设备安装、布线、天线调试与网络部署，按不影响日常作业的时段施工。</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__no">STEP 06</div>
+          <h4>联调与数据对接</h4>
+          <p>EMQX 数据流转调试、业务系统接口对接、批量压力测试。</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__no">STEP 07</div>
+          <h4>试运行与优化</h4>
+          <p>7–15 天试运行，排查漏读串读，把识别率调到验收线以上。</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__no">STEP 08</div>
+          <h4>培训、验收、交付</h4>
+          <p>操作与运维培训、资料移交、项目终验，转入售后。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 售后保障 ======================= -->
+  <section class="sec sec--paper2">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">售后与保障</div>
+          <h2 class="sec-title">上线只是开始，<br>后面还有五年十年的运维</h2>
+          <p class="sec-lead">RFID 系统不是买回来就不用管的东西：标签会换批、点位会调整、系统要跟着业务改。售后条款写清楚，比承诺"终身免费"实在。</p>
+        </div>
+      </div>
+
+      <ul class="check-grid">
+        <li>7×12 小时远程技术支持，故障先远程判断再决定是否到场</li>
+        <li>设备质保服务，故障快速响应，备件按型号常备</li>
+        <li>系统终身运维指导，含版本优化与参数调整</li>
+        <li>免费操作培训与运维培训，交付时培训到能独立操作为止</li>
+        <li>项目资料完整交付：点位图纸、设备手册、操作台账、编码规范</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= 收益 + 为什么是灵星 ======================= -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">落地价值</div>
+          <h2 class="sec-title">能算清的账，<br>才叫收益</h2>
+        </div>
+      </div>
+
+      <div class="value-grid">
+        <div class="value reveal"><b>降本</b><span>减少人工盘点、人工验收与二次录入的工时。</span></div>
+        <div class="value reveal"><b>提效</b><span>仓储周转、收货与盘点效率提升 70%–90%（按场景实测）。</span></div>
+        <div class="value reveal"><b>止损</b><span>降低库存积压、过期损耗与账实差异带来的损失。</span></div>
+        <div class="value reveal"><b>合规</b><span>医药场景满足 GSP 审计与飞行检查的数据要求。</span></div>
+        <div class="value reveal"><b>可控</b><span>库存、批次、冷链温度与流转全程可视。</span></div>
+        <div class="value reveal"><b>可升级</b><span>从传统仓储过渡到数字化仓库，后续可叠加产线、门店等场景。</span></div>
+      </div>
+
+      <div class="split" style="margin-top:clamp(40px,6vw,72px)">
+        <div class="reveal">
+          <div class="eyebrow">为什么是灵星</div>
+          <h2 class="sec-title" style="font-size:clamp(22px,2.8vw,32px)">标签是我们印的，<br>系统也是我们接的</h2>
+          <p class="sec-lead" style="margin-top:18px">
+            RFID 项目最常见的扯皮，是标签厂说读写器不行、集成商说标签不对。
+            我们两头都自己做，出了问题不用你先去分辨是谁的责任。
+          </p>
+          <ul class="points">
+            <li><strong>标签是主业</strong>——15 年卷筒不干胶标签制造经验，UL 认证产品标签生产企业。印刷、复合、模切、写码这些后道工序本来就在我们的产线上，RFID 标签不用另外找一家做。</li>
+            <li><strong>软件有底子</strong>——公司持有软件著作权，内部已跑通 CERM 与 ESKO 数字化流程，报价、排产、质检记录全程线上，做系统对接不是从零开始。</li>
+            <li><strong>交付按流程</strong>——八个阶段、十二项验收功能写进方案；售后 7×12 小时远程支持，含操作与运维培训。</li>
+            <li><strong>资料全交付</strong>——点位图纸、设备手册、编码规范、操作台账一并给，不把关键参数留在供应商手里。</li>
+          </ul>
+        </div>
+        <div class="split__media split__media--framed reveal">
+          <img src="assets/img/labels-production.jpg" alt="标签生产线" loading="lazy" style="aspect-ratio:4/5;object-fit:cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 适用客户类型 ======================= -->
+  <section class="sec sec--paper2">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">适用客户</div>
+          <h2 class="sec-title">这些场景，<br>我们做过也做得了</h2>
+          <p class="sec-lead">
+            如果你的痛点里有"盘不清、查不出、留不下痕"，基本都在下面这几类里。
+            不在其中的场景也可以聊——RFID 的判断标准是货品与流程，不是行业名字。
+          </p>
+        </div>
+        <a class="link-more" href="contact.html">说说你的场景 <span class="arrow">→</span></a>
+      </div>
+
+      <div class="fit-tags">
+        <span class="fit-tag">医药企业</span>
+        <span class="fit-tag">医药批发</span>
+        <span class="fit-tag">医药冷链仓库</span>
+        <span class="fit-tag">连锁餐饮</span>
+        <span class="fit-tag">中央厨房</span>
+        <span class="fit-tag">食品加工厂</span>
+        <span class="fit-tag">冷链物流企业</span>
+        <span class="fit-tag">需要库存精准管控、全程溯源、合规审计的各类仓储企业</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CTA ======================= -->
+  <section class="cta-band">
+    <div class="wrap cta-band__inner">
+      <div>
+        <h2>先做一次现场勘测，再谈报价</h2>
+        <p>告诉我们库房面积、货架类型、主要货品材质与要对接的系统，我们给一份带点位图和验收指标的方案。</p>
+      </div>
+      <a class="btn" href="contact.html">预约勘测 <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <a class="fab" href="contact.html">预约勘测</a>
+
+  <script src="js/static-data.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
