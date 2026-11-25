@@ -34,7 +34,7 @@
       document.getElementById('case-title').textContent = c.title;
       document.getElementById('case-summary').textContent = c.summary || '';
       const cover = document.getElementById('case-cover');
-      cover.src = c.cover || '/assets/img/labels-range.jpg';
+      cover.src = c.cover || 'assets/img/labels-range.jpg';
       cover.alt = c.title;
 
       // 正文：三个小标题，分别对应问题、做法、结果
@@ -64,7 +64,7 @@
             .map(
               (x) => `
               <a class="case-card reveal" href="case-detail.html?id=${x.id}">
-                <div class="case-card__media"><img src="${esc(x.cover || '/assets/img/labels-range.jpg')}" alt="${esc(x.title)}" loading="lazy"></div>
+                <div class="case-card__media"><img src="${esc(x.cover || 'assets/img/labels-range.jpg')}" alt="${esc(x.title)}" loading="lazy"></div>
                 <div class="case-card__body">
                   <div class="case-card__meta"><span>${esc(x.client)}</span><span class="dot"></span><span>${esc(x.industry || '')}</span></div>
                   <h3>${esc(x.title)}</h3>

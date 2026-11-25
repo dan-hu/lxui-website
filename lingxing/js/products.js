@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="product-block__media reveal">
-          <img src="${esc(p.cover || '/assets/img/labels-range.jpg')}" alt="${esc(p.name)}" loading="lazy">
+          <img src="${esc(p.cover || 'assets/img/labels-range.jpg')}" alt="${esc(p.name)}" loading="lazy">
         </div>
       </article>`;
   }

@@ -117,7 +117,7 @@
     return `
       <a class="case-card reveal" href="case-detail.html?id=${c.id}">
         <div class="case-card__media">
-          <img src="${esc(c.cover || '/assets/img/labels-range.jpg')}" alt="${esc(c.title)}" loading="lazy">
+          <img src="${esc(c.cover || 'assets/img/labels-range.jpg')}" alt="${esc(c.title)}" loading="lazy">
         </div>
         <div class="case-card__body">
           <div class="case-card__meta">

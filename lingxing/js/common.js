@@ -112,14 +112,14 @@
   const SISTER_SITE = '/zhicheng/'; // 兄弟公司「上海芝诚包装」官网（同域名子目录）
 
   const NAV = [
-    { href: '/products.html', label: '产品与工艺', key: 'products' },
-    { href: '/rfid.html', label: 'RFID 方案', key: 'rfid' },
-    { href: '/solutions.html', label: '行业方案', key: 'solutions' },
-    { href: '/factory.html', label: '制造实力', key: 'factory' },
-    { href: '/cases.html', label: '客户案例', key: 'cases' },
-    { href: '/about.html', label: '关于我们', key: 'about' },
-    { href: '/news.html', label: '新闻动态', key: 'news' },
-    { href: '/contact.html', label: '联系我们', key: 'contact' },
+    { href: 'products.html', label: '产品与工艺', key: 'products' },
+    { href: 'rfid.html', label: 'RFID 方案', key: 'rfid' },
+    { href: 'solutions.html', label: '行业方案', key: 'solutions' },
+    { href: 'factory.html', label: '制造实力', key: 'factory' },
+    { href: 'cases.html', label: '客户案例', key: 'cases' },
+    { href: 'about.html', label: '关于我们', key: 'about' },
+    { href: 'news.html', label: '新闻动态', key: 'news' },
+    { href: 'contact.html', label: '联系我们', key: 'contact' },
     { href: SISTER_SITE, label: '上海芝诚包装', key: 'sister' },
   ];
 
